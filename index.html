@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 03</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-<h1>This is the header</h1>
+    <header class="md:container mx-auto">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="navbar-start">
+                <img class="bg-[#abef5f] p-2 rounded-full" src="icons/aero.svg" alt="">
+                <a class="btn btn-ghost text-[32px] manrope font-extrabold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 manrope text-[16px] space-x-[37px]">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="hidden lg:flex btn bg-[#ABEF5F] rounded-[32px] gap-[8px]">
+                    <a class="manrope text-[20px] font-extrabold">Book Consult</a>
+                    <img class="bg-[#000000] p-2 rounded-full w-[33px]" src="icons/aero2.svg" alt="">
+                </div>
+            </div>
+            <!-- Hamburger menu for mobile -->
+            <div class="dropdown dropdown-end lg:hidden">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-[48] bg-[#ffffff] p-1 border border-[rgba(233,233,233,1)] rounded-full" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- hero section -->
+        <div>
+            <div class="hero h-[712px]">
+                <div class="hero-content text-center">
+                    <div class="max-w-3xl">
+                        <img src="assets/banner.png" alt="" class="mx-auto">
+                        <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+                        <p class="py-6">
+                            The barn house captivates with its blend of rustic charm and modern sophistication,
+                            featuring weathered wood, sleek metal accents, and large windows that flood the space with
+                            natural light.
+                        </p>
+                        <div
+                            class="btn btn-primary bg-[rgba(171,239,95,0.5)] text-[#000000] border-none rounded-[32px]">
+                            <button class="">Get Started</button>
+                            <img class="bg-[#abef5f] p-2 rounded-full" src="icons/aero.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
@@ -16,4 +90,5 @@
 
     </footer>
 </body>
+
 </html>
