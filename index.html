@@ -17,10 +17,10 @@
     </style>
 </head>
 
-<body>
-    <header class="md:container mx-auto">
+<body class="bg-[#F1F1F1]">
+    <header class="h-[800px] bg-[#ffffff]">
         <!-- navbar -->
-        <div class="navbar">
+        <div class="navbar md:container mx-auto">
             <div class="navbar-start">
                 <img class="bg-[#abef5f] p-2 rounded-full" src="icons/aero.svg" alt="">
                 <a class="btn btn-ghost text-[32px] manrope font-extrabold">Rinterio</a>
@@ -74,7 +74,7 @@
                             natural light.
                         </p>
                         <div
-                            class="btn btn-primary bg-[rgba(171,239,95,0.5)] text-[#000000] border-none rounded-[32px]">
+                            class="btn btn-primary bg-[rgba(171,239,95,0.5)] text-[#000000] border-none rounded-[32px] shadow-none">
                             <button class="">Get Started</button>
                             <img class="bg-[#abef5f] p-2 rounded-full" src="icons/aero.svg" alt="">
                         </div>
@@ -84,6 +84,61 @@
         </div>
     </header>
     <main>
+        <!-- about us -->
+        <section class="">
+            <div class="absolute top-[1170px] lg:top-[880px] left-[-30px] lg:left-[250px] z-10">
+                <img src="assets/Vector.png" alt="">
+            </div>
+
+            <div class="hero container mx-auto">
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse items-center justify-between gap-10 lg:pt-[93px]">
+
+                        <!-- Image -->
+                        <div>
+                            <img src="assets/Rectangle.png" class="rounded-lg shadow-2xl w-full h-auto" />
+                        </div>
+
+                        <!-- Text Content -->
+                        <div class="w-full lg:w-1/2 space-y-6">
+                            <div
+                                class="manrope text-base font-bold flex items-center gap-2 bg-white w-[128px] justify-center rounded-xl mb-4">
+                                <img src="icons/aero.svg" alt="">
+                                <p>About US</p>
+                            </div>
+                            <div class="space-y-[24px] mb-[24px]">
+                                <h1 class="manrope text-[40px] font-bold leading-[50px]">
+                                    We design thoughtful,<br>liveable spaces
+                                </h1>
+                                <p class="manrope">
+                                    The barn house captivates with its blend of rustic charm and
+                                    modern sophistication, featuring weathered wood, sleek metal accents.
+                                </p>
+                            </div>
+
+                            <!-- Cards -->
+                            <div class="space-y-6">
+                                <div class="card card-side bg-base-100 shadow-sm px-7 flex items-center">
+                                    <div class="w-[64px]"><img src="assets/commercial.png" alt="Movie" /></div>
+                                    <div class="card-body">
+                                        <h2 class="card-title">Commercial</h2>
+                                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                                    </div>
+                                </div>
+                                <div class="card card-side bg-base-100 shadow-sm px-7 flex items-center">
+                                    <div class="w-[64px]"><img src="assets/residential.png" alt="Movie" /></div>
+                                    <div class="card-body">
+                                        <h2 class="card-title">Residential</h2>
+                                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
